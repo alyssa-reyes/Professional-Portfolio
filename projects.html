@@ -125,6 +125,30 @@ Interactive map of Alaska showing environmentally threatened communities. These 
     <figcaption>2005-2015 Burglary Rates in Los Angeles County, CA </figcaption>
 </figure>
 </div>
+		<figure>	<div class="slideshow-container">
+
+    <img class="slides" src="images/RoadtripPg1.jpg" style="width:100%">
+    <img class="slides" src="images/RoadtripPg2.jpg" style="width:100%">
+    <img class="slides" src="images/RoadtripPg3.jpg" style="width:100%">
+    <img class="slides" src="images/RoadtripPg4.jpg" style="width:100%">
+	<img class="slides" src="images/RoadtripPg5.jpg" style="width:100%">
+
+<script>
+let index = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    index++;
+    if (index > slides.length) { index = 1 }    
+    slides[index-1].style.display = "block";  
+    setTimeout(showSlides, 2500);
+}
+</script>
+</figure></div>
         </article>
           <h2>Written Projects</h2>
     </main>
